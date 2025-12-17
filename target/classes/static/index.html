@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Science-proyects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🐥</span>
+      <div>
+        <div class="title">Proyectos científicos DB :3</div>
+        <div class="subtitle">Equipo 2</div>
+      </div>
+    </div>
+    <div id="status" class="status">Buscando tablas...</div>
+  </header>
+
+  <main class="layout">
+    <aside class="tabs">
+      <div class="tabsHeader">Tablas</div>
+      <div id="tabList" class="tabList"></div>
+      <div class="tabsFooter">
+        <button id="refreshBtn" class="btn ghost">Recargar</button>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="contentHeader">
+        <div>
+          <h1 id="viewTitle">Selecciona una tabla</h1>
+          <div id="viewHint" class="muted">Por favor, revise su conección a MySQL</div>
+        </div>
+        <div class="actions">
+          <button id="newRowBtn" class="btn" disabled>Agregar registro</button>
+        </div>
+      </div>
+
+      <div id="tableWrap" class="card hidden">
+        <div class="cardHeader">
+          <div class="pill" id="metaPill">Meta</div>
+          <div class="spacer"></div>
+          <button id="reloadRowsBtn" class="btn ghost" disabled>Recargar filas</button>
+        </div>
+        <div class="tableScroll">
+          <table id="dataTable" class="dataTable"></table>
+        </div>
+      </div>
+
+      <div id="queryWrap" class="card hidden">
+        <div class="cardHeader">
+          <div class="pill">Consultas SELECT</div>
+          <div class="spacer"></div>
+          <button id="runQueryBtn" class="btn">Ejecutar</button>
+        </div>
+        <textarea id="queryInput" class="queryInput" spellcheck="false">Aquí mete tu consulta plis 😘</textarea>
+        <div class="muted small">Solamente acepta consultas SELECT, no es necesario que pongas ";".</div>
+        <div class="tableScroll" style="margin-top:12px;">
+          <table id="queryTable" class="dataTable"></table>
+        </div>
+      </div>
+
+      <div id="emptyState" class="emptyState">
+        <div class="emptyIcon">🤕</div>
+        <div class="emptyText">No se ha conectado a ninguna base de datos pipipi.</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modalBackdrop" id="modalBackdrop"></div>
+    <div class="modalPanel" role="dialog" aria-modal="true">
+      <div class="modalHeader">
+        <div>
+          <div id="modalTitle" class="modalTitle">Editar</div>
+          <div id="modalSubtitle" class="modalSubtitle muted"></div>
+        </div>
+        <button id="modalClose" class="iconBtn" aria-label="Cerrar">✕</button>
+      </div>
+
+      <form id="modalForm" class="modalForm"></form>
+
+      <div class="modalFooter">
+        <button id="modalCancel" type="button" class="btn ghost">Cancelar</button>
+        <button id="modalSave" type="button" class="btn">Guardar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

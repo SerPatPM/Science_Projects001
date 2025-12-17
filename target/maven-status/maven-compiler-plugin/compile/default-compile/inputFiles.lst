@@ -1,0 +1,7 @@
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/DbWebUiApplication.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/service/ColumnMeta.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/service/TableMeta.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/service/TableService.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/web/ApiController.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/web/QueryRequest.java
+/Users/pato/Downloads/db-webui/src/main/java/com/example/dbwebui/web/UpdateRequest.java

@@ -1,0 +1,7 @@
+com/example/dbwebui/web/ApiController.class
+com/example/dbwebui/web/QueryRequest.class
+com/example/dbwebui/service/TableService.class
+com/example/dbwebui/service/ColumnMeta.class
+com/example/dbwebui/service/TableMeta.class
+com/example/dbwebui/web/UpdateRequest.class
+com/example/dbwebui/DbWebUiApplication.class
